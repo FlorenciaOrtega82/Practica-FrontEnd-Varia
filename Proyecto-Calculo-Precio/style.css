@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    background-color: rgba(51, 51, 51, 0.704);
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(62, 62, 62);
+    color: rgb(169, 169, 169);
+}
+
+.titulo{
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*_____________________________________________________________________________*/
+
+input{
+    height: 45px;
+    background-color: rgba(158, 158, 158, 0.23);
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    border-bottom: 1px solid #808080;
+    font-size: 15px;
+    outline: none;
+    color: #c5c5c5;
+}
+
+#calcular{
+    width: 100%;
+}
+
+.Total{
+    background-color: rgba(83, 83, 83, 0.652);
+    height: 45px;
+    border-radius: 3px;
+    padding: 12px;
+    color: #c3c3c3;
+}
+
+
+
+.container-input {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.7fr 1.5fr 0.6fr 1.5fr 0.8fr 0.5fr 2.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". input1 . input2 ."
+      ". . . . ."
+      ". input3 . Total ."
+      ". . . . ."
+      ". boton boton boton ."
+      ". . . . .";
+  }
+  
+  .input1 { grid-area: input1; }
+  
+  .input3 { grid-area: input3; }
+  
+  .input2 { grid-area: input2; }
+  
+  .Total { grid-area: Total; }
+  
+  .boton { grid-area: boton; }
+  
+  
+
